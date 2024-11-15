@@ -58,15 +58,6 @@ time_end = time.time_ns()
 print("using the nasa api wasted %.0f ms of your life" % ((time_end - time_start) / 1e6))
 
 
-# sun_mass, sun_radius = 1988500e24, 696500e3
-# mercury_mass, mercury_radius = 3.302e23, 2440e3
-# venus_mass, venus_radius = 48.685e23, 6051.84e3
-# earth_mass, earth_radius = 5.97219e24, 6371.01e3
-# mars_mass, mars_radius = 6.4171e23, 3389.92e3
-# jupiter_mass, jupiter_radius = 189818722e22 * 1e-3, 69911e3
-# saturn_mass, saturn_radius = 5.6834e26, 58232e3
-# uranus_mass, uranus_radius = 86.813e24, 25362e3
-# neptune_mass, neptune_radius = 102.409e24, 24624e3
 def spaceball_from_data(data, color):
     return SpaceBall(data['pos'], data['v'], data['m'], data['r'], color)
 
